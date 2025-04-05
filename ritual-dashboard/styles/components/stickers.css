@@ -1,0 +1,50 @@
+/* Sticker styles */
+.sticker-item {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: grab;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 10px;
+}
+
+.sticker-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.sticker-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #4f46e5;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* Draggable sticker styles */
+.draggable {
+    position: absolute !important; /* Ensure position stays absolute */
+    cursor: grab;
+    z-index: 10;
+}
+
+.draggable:active {
+    cursor: grabbing;
+    z-index: 100;
+}
+
+.ghost {
+    opacity: 0.5;
+}
