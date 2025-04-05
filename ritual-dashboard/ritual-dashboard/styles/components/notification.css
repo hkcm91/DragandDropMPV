@@ -1,0 +1,14 @@
+/* Notification styles */
+.notification-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(79, 70, 229, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1000;
+}

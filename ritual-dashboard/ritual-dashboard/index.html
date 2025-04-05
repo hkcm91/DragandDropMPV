@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritual Interactive System</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Notification Component -->
+    <div id="notification" class="notification-popup"></div>
+    
+    <!-- Sidebar Component -->
+    <div id="sidebar-button">
+        <i class="fas fa-chevron-right" id="sidebar-icon"></i>
+    </div>
+    
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <h2>Stickers</h2>
+        </div>
+        
+        <div id="sticker-grid" class="sticker-grid">
+            <!-- Stickers will be loaded here dynamically -->
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="main-content">
+        <header class="dashboard-header">
+            <h1>Ritual Dashboard</h1>
+            <p>Click the blue tab to open stickers</p>
+        </header>
+        
+        <div id="canvas" class="canvas-container">
+            <h2>Your Dashboard</h2>
+            <p>Drag stickers from the sidebar and drop them here</p>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/state-adapter.js"></script>
+    <script src="js/ui-components.js"></script>
+    <script src="js/sticker-system.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
